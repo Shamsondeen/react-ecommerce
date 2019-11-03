@@ -19,7 +19,7 @@ export default class Product extends Component {
                         value.handleDetail(id)
                         }}>
                         <Link to="/details">
-                            <img src={img} alt="product" className="card-img-top" />
+                            <img src={img} alt="product" className="card-img-top mx-auto" />
                         </Link>
                         <button className="cart-btn" disabled={inCart ? true : false} onClick={() => { 
                             value.addToCart(id);
@@ -52,7 +52,15 @@ export default class Product extends Component {
                            </h5>
                                   
                     </div>
-                </div>
+                    <div className="card-footer-rating text-center">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    </div>
+                    </div>
+            
             </ProductWrapper>
         );
     }
@@ -77,6 +85,7 @@ const ProductWrapper = styled.div`
     border-color: transparent;
     border-top: transparent;
     transition: all 1s linear;
+    background: green;
 }
 &:hover{
     .card{
@@ -84,8 +93,16 @@ const ProductWrapper = styled.div`
         box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
     }
     .card-footer{
-        background: rgba(247, 247, 247);
+        background: green;
     }
+}
+
+.card-footer p{
+    color: white;
+}
+
+.card-footer h5{
+    color: yellow;
 }
 
 .img-container{
@@ -96,8 +113,7 @@ const ProductWrapper = styled.div`
 
 .card-img-top{
     transition: all 1s linear;
-    width: 7rem;
-    height: 7rem;
+    
 }
 
 .img-container: hover .card-img-top{
@@ -109,7 +125,7 @@ const ProductWrapper = styled.div`
     bottom:0;
     right:.1rem;
     padding: 0.2rem 0.4rem;
-    background: var(--lightBlue);
+    background: green;
     border: none;
     color: var(--mainWhite);
     font-size: 1.4rem;
@@ -122,13 +138,21 @@ const ProductWrapper = styled.div`
 }
 
 .cart-btn: hover {
-    color: var(--mainBlue);
+    color: yellow;
     cursor: pointer;
 }
 
-.rating{
-    width: 8rem;
-    height: 5rem;
+.fa-star{
+    width:1px;
+    height: 1px;
+    color: var(--mainYellow);
+    margin: 1rem;
+    margin-bottom: 2.7rem;
+    
+}
+
+.card-footer-rating{
+    background: green;
 }
 
 ;

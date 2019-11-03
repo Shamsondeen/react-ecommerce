@@ -12,7 +12,11 @@ export default class Details extends Component {
                         id, 
                         company, 
                         img,
-                        info, 
+                        info,
+                        info2,
+                        info3,
+                        info4,
+                        info5, 
                         price, 
                         title, 
                         inCart 
@@ -47,6 +51,10 @@ export default class Details extends Component {
                                                 some info about product :
                                             </p>
                                             <p className="text-muted lead">{info}</p>
+                                            <p className="text-muted lead">{info2}</p>
+                                            <p className="text-muted lead">{info3}</p>
+                                            <p className="text-muted lead">{info4}</p>
+                                            <p className="text-muted lead">{info5}</p>
 
                                             {/*buttons*/}
 

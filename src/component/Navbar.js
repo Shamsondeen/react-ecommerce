@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import logo from '../logo.png';
+import logo from '../ika.png';
 import styled from 'styled-components';
 import { ButtonContainer } from "./button";
 
@@ -17,11 +17,6 @@ export default class Navbar extends Component {
                     <img src={logo} alt="store" 
                     className="navbar-brand" />
                 </Link>
-                <ul className="navbar-nav align-items-center">
-                    <li className="nav-item ml-5">
-                        Products
-                    </li>
-                </ul>
                 <Link to="/cart" className="ml-auto">
                 <ButtonContainer>
                     <span className="cart mr-2">
@@ -42,9 +37,20 @@ background: lightgreen;
     text-transform: capitalise;
 }
 
+.fa-cart-plus{
+    color: yellow;
+    &:hover {
+       
+        color: var(--mainDark)
+    }
+}
+
+
 
 
 `
+
+
 
 
  
