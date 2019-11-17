@@ -52,13 +52,6 @@ export default class Product extends Component {
                            </h5>
                                   
                     </div>
-                    <div className="card-footer-rating text-center">
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    <i className="fas fa-star"></i>
-                    </div>
                     </div>
             
             </ProductWrapper>
@@ -142,18 +135,9 @@ const ProductWrapper = styled.div`
     cursor: pointer;
 }
 
-.fa-star{
-    width:1px;
-    height: 1px;
-    color: var(--mainYellow);
-    margin: 1rem;
-    margin-bottom: 2.7rem;
-    
-}
 
-.card-footer-rating{
-    background: green;
-}
+
+
 
 ;
 `
